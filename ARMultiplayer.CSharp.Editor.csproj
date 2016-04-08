@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5334D3ED-CD39-3C61-5155-C38F0AAA240F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.3.4f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;VUFORIA_ANDROID_SETTINGS;VUFORIA_SAMPLE_ORIENTATION_SETTINGS;CROSS_PLATFORM_INPUT;MOBILE_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;VUFORIA_ANDROID_SETTINGS;VUFORIA_SAMPLE_ORIENTATION_SETTINGS;CROSS_PLATFORM_INPUT;MOBILE_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\Photon Unity Networking\Editor\PhotonNetwork\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>Assets\Plugins\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets\Plugins\WebSocket\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions.Editor">
+      <HintPath>Assets\Vuforia\Editor\Scripts\Vuforia.UnityExtensions.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>Assets\Vuforia\Scripts\Internal\Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript-Editor-firstpass">
+      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-Editor-firstpass.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ARMultiplayer.CSharp.Plugins.csproj">
+      <Project>{8909C2C5-8807-1024-C0BE-49A249984DD9}</Project>
+      <Name>ARMultiplayer.CSharp.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="ARMultiplayer.CSharp.csproj">
+      <Project>{CB5446BC-A3FE-D321-FE73-368DD1234521}</Project>
+      <Name>ARMultiplayer.CSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Editor\Vuforia\SampleOrientationSetter.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\AccountService.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonConverter.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonEditor.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonGUI.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonViewHandler.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonViewInspector.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonViewPrefabApply.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PunSceneSettings.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\ReorderableListResources.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\ServerSettingsInspector.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonAnimatorViewEditor.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonRigidbody2DViewEditor.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonRigidbodyViewEditor.cs" />
+    <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonTransformViewEditor.cs" />
+    <Compile Include="Assets\Vuforia\Editor\Scripts\ComponentFactoryStarter\ComponentFactoryStarter.cs" />
+    <Compile Include="Assets\Vuforia\Editor\Scripts\ExtensionImport.cs" />
+    <Compile Include="Assets\Vuforia\Editor\Scripts\PostProcessBuildPlayer.cs" />
+    <Compile Include="Assets\Vuforia\Editor\Scripts\Unzipper\SharpZipLibUnzipper.cs" />
+    <Compile Include="Assets\_CompletedAssets\MobileInput\Scripts\Editor\CrossPlatformInputInitialize.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Elementals\Readme.txt" />
+    <None Include="Assets\Photon Unity Networking\changelog.txt" />
+    <None Include="Assets\Photon Unity Networking\readme.txt" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Photon3Unity3D.xml" />
+    <None Include="Assets\Plugins\release_history.txt" />
+    <None Include="Assets\StreamingAssets\QCAR\AR.xml" />
+    <None Include="Assets\StreamingAssets\QCAR\StonesAndChips.xml" />
+    <None Include="Assets\StreamingAssets\QCAR\StonesAndWood.xml" />
+    <None Include="Assets\StreamingAssets\QCAR\Tarmac.xml" />
+    <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
+    <None Include="Assets\Vuforia\Editor\Scripts\Vuforia.UnityExtensions.Editor.XML" />
+    <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
+    <None Include="Assets\Vuforia\Scripts\Internal\Vuforia.UnityExtensions.XML" />
+    <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
+    <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
+    <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
+    <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
+    <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
+    <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
+    <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+    <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
+    <None Include="Assets\_CompletedAssets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>

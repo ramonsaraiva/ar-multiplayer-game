@@ -1,0 +1,15 @@
+Assembly-CSharp-Editor-vs.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-firstpass-vs.csproj
+Assembly-CSharp-firstpass.csproj
+Assembly-CSharp-vs.csproj
+Assembly-CSharp.csproj
+ARMultiplayer-csharp.sln
+ARMultiplayer-csharp.v12.suo
+ARMultiplayer.sln
+Library/
+Temp/
+obj/
+Assembly-UnityScript.unityproj
+Assembly-UnityScript-vs.unityproj
+
