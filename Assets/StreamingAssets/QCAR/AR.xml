@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="colors" size="40.000000 36.917686" />
-    <ImageTarget name="stairs" size="40.000000 36.576576" />
-    <ImageTarget name="red" size="40.000000 40.000000" />
-    <ImageTarget name="yellow_green" size="40.000000 36.720001" />
+    <ImageTarget name="color_marker2" size="40.000000 39.938366" />
+    <ImageTarget name="color_marker1" size="40.000000 35.007706" />
   </Tracking>
 </QCARConfig>

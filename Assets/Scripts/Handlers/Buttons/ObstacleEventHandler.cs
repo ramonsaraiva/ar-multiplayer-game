@@ -25,10 +25,12 @@ public class ObstacleEventHandler : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit hit;
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit[] hits;
 
-            if (Physics.Raycast(ray, out hit))
+            hits = Physics.RaycastAll(ray);
+
+            foreach (var hit in hits)
             {
                 Transform objectHit = hit.transform;
                 if (objectHit.tag == "ChangeObstacle")
