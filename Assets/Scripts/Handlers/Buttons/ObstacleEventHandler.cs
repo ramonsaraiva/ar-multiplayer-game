@@ -10,6 +10,9 @@ public class ObstacleEventHandler : MonoBehaviour
     private Transform environment;
 
     [SerializeField]
+    private Transform groundOffset;
+
+    [SerializeField]
     private List<GameObject> obstacles;
 
     private GameObject current;
@@ -50,7 +53,7 @@ public class ObstacleEventHandler : MonoBehaviour
     {
         Destroy(current);
         GameObject obstacle = obstacles[current_index++ % obstacles.Count];
-        Vector3 obstaclePosition = new Vector3(transform.position.x, transform.position.y + obstacle.transform.localScale.y / 2 + 10f, transform.position.z);
+        Vector3 obstaclePosition = new Vector3(transform.position.x, transform.position.y + obstacle.transform.localScale.y / 2 + 14f, transform.position.z);
         current = Instantiate(obstacle, obstaclePosition, transform.rotation) as GameObject;
         current.transform.parent = transform;
         DisablePrefabArenaBehaviours();

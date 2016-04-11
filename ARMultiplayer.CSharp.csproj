@@ -156,6 +156,7 @@
     <Compile Include="Assets\Scripts\Behaviours\Controllers\SpawnerBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviours\Debug\DebugManagerBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviours\Debug\DebugUIBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Behaviours\Markers\AboveGroundBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviours\Markers\FacingCameraBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviours\Network\Enemy\EnemyNetworkBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviours\Network\NetworkBehaviour.cs" />
