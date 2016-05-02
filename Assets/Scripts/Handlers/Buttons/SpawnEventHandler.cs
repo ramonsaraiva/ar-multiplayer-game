@@ -67,6 +67,7 @@ public class SpawnEventHandler : MonoBehaviour
 
     private void DisablePrefabArenaBehaviours()
     {
+        current.GetComponent<BelongsToArenaBehaviour>().enabled = false;
         current.GetComponent<SpawnerBehaviour>().enabled = false;
     }
 }

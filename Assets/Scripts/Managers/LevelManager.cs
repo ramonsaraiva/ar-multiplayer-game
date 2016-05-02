@@ -11,9 +11,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private Transform playerStartPosition;
 
-    [SerializeField]
-    private SpawnerBehaviour spawner;
-
     private GameObject player;
 
     public void StartGame()
@@ -21,7 +18,12 @@ public class LevelManager : MonoBehaviour
         if (PhotonNetwork.isMasterClient)
         {
             player = PhotonNetwork.Instantiate("Player", playerStartPosition.position, Quaternion.identity, 0) as GameObject;
-            spawner.enabled = true;
+            GameObject[] spawners = GameObject.FindGameObjectsWithTag("Spawner");
+            foreach (GameObject spawner in spawners)
+            {
+                if (spawner.transform.parent.tag == "Arena")
+                    spawner.GetComponent<SpawnerBehaviour>().enabled = true;
+            }
         }
     }
 
@@ -30,7 +32,11 @@ public class LevelManager : MonoBehaviour
         if (PhotonNetwork.isMasterClient)
         {
             PhotonNetwork.DestroyAll();
-            spawner.enabled = false;
+            GameObject[] spawners = GameObject.FindGameObjectsWithTag("Spawner");
+            foreach (GameObject spawner in spawners)
+            {
+                spawner.GetComponent<SpawnerBehaviour>().enabled = false;
+            }
         }
     }
 }
